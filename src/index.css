@@ -68,8 +68,10 @@ main {
   align-items: center;
   gap: 24px;
   background-color: var(--muted-background);
+  border: 2px solid var(--muted-background);
   border-radius: 1rem;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
+  cursor: pointer;
 
   .place-card-img-wrapper {
     min-width: 198px;
@@ -82,6 +84,8 @@ main {
       height: 100%;
       object-fit: cover;
       object-position: center;
+      transform: scale(1.1);
+      transition: transform 300ms ease-in-out;
     }
   }
 
@@ -122,6 +126,18 @@ main {
       }
     }
   }
+
+  /* Animations and transitions */
+  transition: border-color 200ms ease-in-out;
+
+  &:hover .place-card-img-wrapper img {
+    transform: scale(1);
+  }
+
+  &:hover {
+    border: 2px solid #444444;
+  }
+
   animation: blur-fade-up 1s ease-out backwards;
 }
 
