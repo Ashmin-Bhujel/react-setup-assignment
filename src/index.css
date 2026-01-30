@@ -77,16 +77,14 @@ main {
   gap: 24px;
   background-color: var(--muted-background);
   border: 2px solid var(--muted-background);
-  border-radius: 2rem;
-  corner-shape: squircle;
+  border-radius: 1rem;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   cursor: pointer;
 
   .place-card-img-wrapper {
     min-width: 198px;
     height: 149px;
-    border-radius: 1rem;
-    corner-shape: squircle;
+    border-radius: 0.5rem;
     overflow: hidden;
 
     .place-img {
