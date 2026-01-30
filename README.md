@@ -2,6 +2,10 @@
 
 Learning to setup a react project manually.
 
+## Project Preview
+
+![A simple project with CSS animations](./public/demo.gif)
+
 ## Initialize Git Inside the Project Directory
 
 ```bash
